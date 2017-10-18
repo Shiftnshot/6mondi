@@ -1,0 +1,41 @@
+<head>
+  <title>Questions</title>
+  <link rel="icon" href="Resources/6.png" />
+  <link rel="stylesheet" type="text/css" href="../Resources/style.css">
+  <link rel="stylesheet" type="text/css" href="Questions.css">
+  <script src="../Resources/pouchdb.js"></script>
+  <script src="https://unpkg.com/vue"></script>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ 	<h1><center> Questions récemment posées </center></h1>
+	<button onclick="window.location='../index.html'"> Retour à la page d'accueil </button>
+ 	<div id="Main">
+		<div id="empty">
+			<h1 v-if="seen"> <br>Aucune question n'a été posée, soyez le/la premier/ère !</h1>
+		</div>
+  		<div id="questions">
+    			<div v-for="q in questions" v-if="seen">
+				<div class="title">
+		      			{{ q.doc.title }}
+		    		</div>
+		    		<hr class="startline">
+		    		<div class="content">
+		      			{{ q.doc.content }}
+		   		</div>
+		    		<div class="profil">
+		      			{{q.doc.option}}   {{q.doc.spec}} , {{q.doc.year}}<sup>e</sup> année
+		    		</div>
+		    		<div class="date">
+		      			<p> Posté le <i>{{parseDate(q.doc.date)}}</i> </p>
+		    		</div>
+		    		<div class="button">
+		      			<button type="button" onclick="alert('Coming soon...')">  Répondre   </button>
+		    		</div>
+		    		<hr class="endline">
+		  	</div>
+		</div>
+	</div>
+    <script src="Questions.js"></script>
+  </body>

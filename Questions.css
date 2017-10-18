@@ -1,0 +1,51 @@
+#retour {
+  margin-right: 50%;
+  margin-bottom: 1%;
+}
+
+
+#Main {
+  text-align: center;
+  font-family: Helvetica;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  position: relative;
+    left: 12.5%;
+    width : 75%;
+}
+
+#questions{
+  line-height: 200%;
+}
+
+#empty{
+  line-height: 400%;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.content {
+  font-size: 20px;
+}
+
+.profil {
+  font-size: 15px;
+  font-style: oblique;
+}
+
+.date {
+  margin-left: 60%;
+}
+
+.startline {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.endline {
+  margin-left: 10%;
+  margin-right: 10%;
+}

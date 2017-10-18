@@ -1,0 +1,22 @@
+<head>
+  <title>Questions</title>
+  <link rel="stylesheet" type="text/css" href="../Resources/style.css">
+  <script src="https://unpkg.com/vue"></script>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <h1><center> Questions récemment posées </center></h1>
+  <div id="searchbar">
+    <span class="text">Que recherchez-vous ? </span>
+    <form action="">
+        <input class="champ" type="text" placeholder="Rechercher..."/>
+        <input class="bouton" type="button" value=" C'est parti !" />
+    </form>
+    <div id="app">
+      {{ q.title }}
+      {{ q.content }}
+    </div>
+</div>
+  <script src="question.js"></script> <!-- à compléter ? -->
+</body>

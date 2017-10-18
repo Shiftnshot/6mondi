@@ -1,0 +1,31 @@
+<html>
+
+  <head>
+    <title>Créer un compte</title>
+    <link rel="icon" href="Resources/6.png" />
+    <link rel="stylesheet" type="text/css" href="../Resources/style.css">
+    <link rel="stylesheet" type="text/css" href="Register.css">
+    <link rel="stylesheet" type="text/css" href="../Ask/Ask.css">
+    <script src="Register.js"></script>
+    <script src="../Resources/pouchdb.js"></script>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+    <center><h3>Créer un compte</h3></center>
+    <form id="Accounts">
+      <fieldset id="createAccount">
+      Choisir un pseudonyme : &nbsp;&nbsp;
+      <input type="text" name="username" value=""><br>
+      <br>
+      Choisir un mot de passe : &nbsp;&nbsp;
+      <input type="password" name="password" value=""><br>
+      <br>
+      Confirmer le mot de passe : &nbsp;&nbsp;
+      <input type="password" name="pPassword" value=""><br>
+      </fieldset>
+    </form>
+    <center> <button type="button" onclick="createUser();"> Valider </button></center>
+  </body>
+
+</html>

@@ -1,0 +1,32 @@
+body {
+  background-color: #BC2733;
+  font-family: Helvetica;
+}
+
+h1 {
+  font-size: 50px;
+  font-style: normal;
+}
+
+button {
+	border:none;
+	padding:6px 6px 6px 6px;
+	border-radius: 4px;
+	box-shadow:3px 3px 12px #999;
+	background:#FFFFFF;
+	font:bold 13px arial;
+	color:#3F0707;
+	margin: 4px 4px;
+	cursor: pointer;
+  transition: all 0.1s linear;
+}
+
+button:hover {
+  background-color: #D8D8D8
+}
+
+button:active {
+  background-color: #FFFFFF;
+  box-shadow: 0 4px #BC2733;
+  transform: translateY(2px);
+}

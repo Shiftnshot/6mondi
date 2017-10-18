@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+
+<head>
+  <title>Poser une question</title>
+  <link rel="icon" href="Resources/6.png" />
+  <link rel="stylesheet" type="text/css" href="../Resources/style.css">
+  <link rel="stylesheet" type="text/css" href="Ask.css">
+  <script src="../Resources/pouchdb.js"></script>
+  <meta charset="UTF-8">
+  <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+ <form method="GET" action="" id="questionForm">
+  <fieldset>
+    <legend>&nbsp;<b>Poser une question </b>&nbsp; </legend>
+    Titre de la question :<br>
+    <input type="text" name="title" value=""><br>
+    Contenu :<br>
+    <textarea name="content" rows="15" cols="0"></textarea>
+  </fieldset>
+  <fieldset>
+    <legend>&nbsp;<b>Spécifications</b>&nbsp;</legend>
+      Branche :
+      <select v-model="selected" selected="Choisir une branche" name="option" id="selectBranche">
+        <option v-for="option in options" v-bind:value="option.text" v-bind:disabled="option.disabled">
+          {{ option.text }}
+        </option>
+      </select>
+    <div id="selectSpec">
+    Spécialisation :
+    <select name="spec">
+      <option value="DF"> DF  </option>
+      <option value="OS"> OS  </option>
+      <option value="OC"> OC  </option>
+      <option value="OA"> OA  </option>
+    </select>
+    </div>
+    Année :
+    <select name ="year">
+      <option value=1>1ère Année</option>
+      <option value=2>2ème Année</option>
+      <option value=3>3ème Année</option>
+      <option value=4>4ème Année</option>
+    </select>
+  </fieldset>
+</form>
+<button onclick="submit();">Envoyer</button>
+<button onclick="window.location='../index.html'"> Retour à la page d'accueil </button>
+<script src="Ask.js"></script>
+</body>

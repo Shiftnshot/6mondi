@@ -1,0 +1,30 @@
+#accountButtons {
+	position:relative;
+	float: right;
+}
+
+#Main {
+  text-align: center;
+  background-color: #FFFFFF;
+  position: relative;
+    left: 12.5%;
+    width : 75%;
+    height: 100%;
+  line-height: 200%;
+	border-radius: 8px;
+}
+#logosis{
+    position:fixed;
+    left: 0px;
+    top: 0px;
+    width : 160px;
+    height: 80px;
+}
+
+input{
+	position:center;
+	width: 120px;
+	padding: 8px 8px;
+	margin: 8px 0;
+	border: 2px solid black;
+	border-radius: 4px;}

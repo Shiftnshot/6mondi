@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+
+<head>
+  <title>6mondi</title>
+  <link rel="icon" href="Resources/6.png" />
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="Resources/style.css">
+  <script src="Resources/pouchdb.js"></script>
+  <script src="index.js"></script>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div id="accountButtons">
+    <form id="accountForm">
+      <input type="text" name="username" value="" placeholder="Nom d'utilisateur">
+      <input type="password" name="password" value="" placeholder="Mot de passe">
+      <button type="button" onclick="connect()">  Se connecter    </button>
+      <button type="button" onclick="window.location = 'Register/Register.html';">     Créer un compte </button>
+        <img src="Resources/logo.sismondi.png" id="logosis">
+    </form>
+
+  </div>
+  <br><br><br>
+  <div id="Title">
+    <h1 style="text-align: center;" id="mainTitle">Bienvenue !</h1>
+    <h3 style="text-align: center;" id="mainDesc">Ceci est une application dédiée au collège Sismondi afin d'aider les élèves.</h3>
+  </div>
+  <div id="Main">
+    <button onclick="window.location='Ask/Ask.html'" id="AskAQuestion"> Poser une question</button>
+    <button onclick="window.location='Questions/Questions.html'" id="SeeAQuestion"> Accéder aux dernières questions posées</button>
+    <h3>
+      Hello Sismondiens, Sismondiennes, dans le cadre d'un projet d'OC informatique, nous avons créé ce site où tu peux poser des questions et d'autres peuvent y répondre !
+    </h3>
+    <img src="Resources/sismondi.jpg" style="width:304px;height:228px;">
+  </div>
+</body>
